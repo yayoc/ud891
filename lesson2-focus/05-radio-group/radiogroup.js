@@ -32,7 +32,7 @@
         e.preventDefault();
 
         // This seems like a good place to do some stuff :)
-
+        this.focusedIdx = this.focusedIdx - 1 < 0 ? this.buttons.length - 1 : this.focusedIdx - 1;
         break;
 
       }
@@ -43,7 +43,7 @@
         e.preventDefault();
 
         // This seems like a good place to do some stuff :)
-
+        this.focusedIdx = this.focusedIdx + 1 > this.buttons.length - 1 ? 0 : this.focusedIdx + 1;
         break;
       }
 
